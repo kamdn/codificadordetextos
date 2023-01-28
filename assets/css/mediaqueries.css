@@ -23,6 +23,10 @@
     html {
         font-size: 40%;
     }
+
+    .projeto, .media {
+        flex-direction: column;
+    }
 }
 
 @media print {
