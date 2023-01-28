@@ -1,0 +1,36 @@
+@media screen and (max-width: 992px) {
+    html {
+        font-size: 50%;
+    }
+
+    .ajuda {
+        bottom: 15rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 30%;
+    }
+
+    .conteudo {
+        flex-direction: column;
+    }
+
+    .ajuda {
+        bottom: 20rem;
+        margin-right: 8rem;
+    }
+}
+
+@media print {
+    .cabecalho {
+        justify-content: center;
+    }
+
+    .logo,
+    .nav,
+    .ajuda {
+        display: none;
+    }
+}

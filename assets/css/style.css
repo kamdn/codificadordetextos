@@ -1,0 +1,423 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root {
+    --font-type: 'Mulish', sans serif;
+    --body-bg: #f5f5f5;
+    --body-bg-img-size: 0;
+    --header-bg-color: #f5f5f5;
+    --letter-space-h1: 0.3rem;
+    --title-heading: #000;
+    --logo-color: #ff9900;
+    --section-encrypt: #fff;
+    --section-decrypt: #fff;
+    --block-color: #fff;
+    --block-svg-fill: #000;
+    --block-text-color: #000;
+    --letter-space-main: 0.06rem;
+    --text-color-main: #000;
+    --border-sections: 0.1rem solid #b1b1b170;
+    --shadow-sections: none;
+    --section-border-radius: 0.5rem;
+    --button-color: #ff9900;
+    --button-text-color: #000;
+    --shadow-buttons: #0000003d 0rem 0.188rem 0.5rem;
+    --last-btn-bg-color: #ff9900;
+    --last-btn-text-color: #000;
+    --last-btn-blue-border: none;
+    --last-btn-red-border: none;
+    --button-border-radius: 5rem;
+    --svg-color-help: #000;
+    --footer-bg-color: #ededed;
+    --fill-svg-one: #000;
+    --fill-svg-oracle-alura: #000;
+    --title-footer: #000;
+    --fill-svg-github: #000;
+    --fill-svg-linkedin: #000;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+html,
+body {
+    height: 100vh;
+    width: 100vw;
+    font-family: var(--font-type);
+}
+
+body {
+    font-size: 1.6rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.3fr 2.45fr 0.25fr;
+    grid-template-areas: "header" "main" "footer";
+    background: var(--body-bg);
+    background-size: var(--body-bg-img-size);
+}
+
+img,
+svg {
+    max-width: 100%;
+    height: auto;
+}
+
+.cabecalho {
+    grid-area: header;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0rem 8rem;
+    background-color: var(--header-bg-color);
+}
+
+.titulo-principal {
+    color: var(--title-heading);
+    font-size: 2.6rem;
+    font-weight: 700;
+    letter-spacing: var(--letter-space-h1);
+}
+
+.logo {
+    width: 2.5rem;
+    fill: var(--logo-color);
+    cursor: pointer;
+}
+
+.nav {
+    position: absolute;
+    width: 16rem;
+    top: 7rem;
+    right: 6rem;
+    display: none;
+}
+
+.nav input[type="radio"] {
+    appearance: none;
+    width: 1.6rem;
+    height: 1.6rem;
+    border-radius: 50rem;
+    cursor: pointer;
+    margin: 0rem 1rem;
+    position: relative;
+    pointer-events: all;
+}
+
+#tema-claro {
+    background-color: #ff9900;
+}
+
+#tema-dark {
+    background-color: #0e1414;
+}
+
+#tema-oracle {
+    background-color: #c74634;
+}
+
+#tema-alura {
+    background-color: #167bf7;
+}
+
+.nav input[type="radio"]:checked {
+    border: 0.2rem inset #ff7400;
+}
+
+#tema-claro::after {
+    content: "Claro";
+    color: #ff7400;
+    opacity: 0;
+    position: absolute;
+    top: 2.2rem;
+    right: -0.8rem;
+    pointer-events: none;
+}
+
+#tema-claro:hover::after {
+    opacity: 1;
+}
+
+#tema-dark::after {
+    content: "Dark";
+    color: #ff7400;
+    opacity: 0;
+    position: absolute;
+    top: 2.2rem;
+    right: -0.8rem;
+    pointer-events: none;
+}
+
+#tema-dark:hover::after {
+    opacity: 1;
+}
+
+#tema-oracle::after {
+    content: "Oracle";
+    color: #ff7400;
+    opacity: 0;
+    position: absolute;
+    top: 2.2rem;
+    right: -0.8rem;
+    pointer-events: none;
+}
+
+#tema-oracle:hover::after {
+    opacity: 1;
+}
+
+#tema-alura::after {
+    content: "Alura";
+    color: #ff7400;
+    opacity: 0;
+    position: absolute;
+    top: 2.2rem;
+    right: -0.8rem;
+    pointer-events: none;
+}
+
+#tema-alura:hover::after {
+    opacity: 1;
+}
+
+.conteudo {
+    grid-area: main;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.encriptador {
+    width: 40rem;
+    padding: 1rem;
+    background-color: var(--section-encrypt);
+    border: var(--border-sections);
+    border-radius: var(--section-border-radius);
+    box-shadow: var(--shadow-sections);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.textarea {
+    width: 38rem;
+    height: 33rem;
+    padding: 2.0rem;
+    background: none;
+    resize: none;
+    overflow: auto;
+    outline: 0;
+    border: none;
+    color: var(--text-color-main);
+    font-family: var(--font-type);
+    font-size: 1.6rem;
+    font-weight: 400;
+    letter-spacing: var(--letter-space-main);
+}
+
+textarea::placeholder {
+    color: var(--text-color-main);
+    font-family: var(--font-type);
+    font-size: 1.8rem;
+    font-weight: 500;
+    letter-spacing: var(--letter-space-main);
+    text-align: center;
+}
+
+textarea::-webkit-scrollbar {
+    width: 1rem;
+    margin: 0;
+}
+
+textarea::-webkit-scrollbar-button {
+    bottom: none;
+}
+
+textarea::-webkit-scrollbar-track {
+    border-radius: 1.2rem;
+}
+
+textarea::-webkit-scrollbar-thumb {
+    border-radius: 1.2rem;
+    background-color: #00000085;
+}
+
+textarea::-webkit-scrollbar-track-piece {
+    border-radius: 1.2rem;
+}
+
+.box-btn {
+    width: 40rem;
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.btn {
+    background-color: var(--button-color);
+    width: 8rem;
+    padding: 0.8rem;
+    border: none;
+    border-radius: var(--button-border-radius);
+    cursor: pointer;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 500;
+    letter-spacing: var(--letter-space-main);
+    color: var(--button-text-color);
+    box-shadow: var(--shadow-buttons);
+}
+
+.blueborder {
+    background-color: var(--last-btn-bg-color);
+    border: var(--last-btn-blue-border);
+    color: var(--last-btn-text-color);
+}
+
+.redborder {
+    background-color: var(--last-btn-bg-color);
+    border: var(--last-btn-red-border);
+    color: var(--last-btn-text-color);
+}
+
+.descriptador {
+    width: 40rem;
+    padding: 1rem;
+    background-color: var(--section-decrypt);
+    border: var(--border-sections);
+    border-radius: var(--section-border-radius);
+    box-shadow: var(--shadow-sections);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.saida-bloco {
+    background-color: var(--block-color);
+    width: 38rem;
+    height: 33rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+}
+
+.svg-bloco {
+    width: 16rem;
+    fill: var(--block-svg-fill);
+}
+
+.textos-bloco {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.titulo-bloco {
+    color: var(--block-text-color);
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: var(--letter-space-main);
+}
+
+.paragrafo-bloco {
+    color: var(--block-text-color);
+    font-size: 1.4rem;
+    font-weight: 500;
+    letter-spacing: var(--letter-space-main);
+}
+
+.ajuda {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    position: fixed;
+    left: 8rem;
+    bottom: 8rem;
+}
+
+.texto-ajuda {
+    font-size: 1.2rem;
+    color: var(--text-color-main);
+}
+
+.svg-ajuda {
+    width: 1.5rem;
+    fill: var(--svg-color-help);
+}
+
+.rodape {
+    grid-area: footer;
+    background-color: var(--footer-bg-color);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "projeto copyright media";
+}
+
+.projeto {
+    grid-area: projeto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.logo-one {
+    width: 6rem;
+    fill: var(--fill-svg-one);
+}
+
+.logo-oracle-alura {
+    width: 14rem;
+    fill: var(--fill-svg-oracle-alura);
+}
+
+.copyright {
+    grid-area: copyright;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.direitos-autorais {
+    color: var(--title-footer);
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: var(--letter-space-main);
+}
+
+.media {
+    grid-area: media;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.logo-github {
+    width: 2.3rem;
+    fill: var(--fill-svg-github);
+}
+
+.logo-linkedin {
+    width: 2rem;
+    fill: var(--fill-svg-linkedin);
+}
