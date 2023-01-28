@@ -60,8 +60,8 @@ body {
     font-size: 1.6rem;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.3fr 2.45fr 0.25fr;
-    grid-template-areas: "header" "main" "footer";
+    grid-template-rows: 0.3fr 2.45fr 0.12fr 0.25fr;
+    grid-template-areas: "header" "main" "ajuda" "footer";
     background: var(--body-bg);
     background-size: var(--body-bg-img-size);
 }
@@ -78,7 +78,6 @@ svg {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 0rem 8rem;
     background-color: var(--header-bg-color);
 }
 
@@ -87,12 +86,14 @@ svg {
     font-size: 2.6rem;
     font-weight: 700;
     letter-spacing: var(--letter-space-h1);
+    margin-left: 4rem;
 }
 
 .logo {
     width: 2.5rem;
     fill: var(--logo-color);
     cursor: pointer;
+    margin-right: 4rem;
 }
 
 .nav {
@@ -259,7 +260,7 @@ textarea::-webkit-scrollbar-track-piece {
 }
 
 .box-btn {
-    width: 40rem;
+    width: 38rem;
     padding-top: 1rem;
     display: flex;
     flex-direction: row;
@@ -347,22 +348,21 @@ textarea::-webkit-scrollbar-track-piece {
 }
 
 .ajuda {
+    grid-area: ajuda;
     display: flex;
     align-items: center;
     gap: 1rem;
-    position: fixed;
-    left: 8rem;
-    bottom: 8rem;
-}
-
-.texto-ajuda {
-    font-size: 1.2rem;
-    color: var(--text-color-main);
 }
 
 .svg-ajuda {
     width: 1.5rem;
     fill: var(--svg-color-help);
+    margin-left: 4rem;
+}
+
+.texto-ajuda {
+    font-size: 1.2rem;
+    color: var(--text-color-main);
 }
 
 .rodape {
