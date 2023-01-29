@@ -1,3 +1,5 @@
+<div align="center"><img height="120px" src="https://user-images.githubusercontent.com/109771015/215297567-c2126b4b-505d-43b0-a52d-8b05270f2020.svg"></div>
+
 # Projeto ONE - Oracle Next Education
 ## Challenge Codificador/Decodificador de Textos
 
