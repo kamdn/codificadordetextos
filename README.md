@@ -1,7 +1,7 @@
 # Projeto ONE - Oracle Next Education
 ## Challenge Codificador/Decodificador de Textos
 
-Desafio proposto para a fase iniciante em programação, construir um gerador de códigos com HTML, CSS e Javascript (sem o uso de frameworks), segue abaixo os requisitos do challenge:
+Desafio proposto para a fase iniciante em programação, construir um codificador/decodificador de textos com HTML, CSS e Javascript (sem o uso de frameworks), segue abaixo os requisitos do challenge:
 
 - Deve funcionar **apenas** com **letras minúsculas.**
 - **Não devem ser utilizados letras com acentos nem caracteres especiais.**
