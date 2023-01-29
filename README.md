@@ -1,4 +1,4 @@
-<div align="center"><img height="120px" src="https://user-images.githubusercontent.com/109771015/215297567-c2126b4b-505d-43b0-a52d-8b05270f2020.svg"></div>
+<div align="center"><img height="120px" src="https://user-images.githubusercontent.com/109771015/215298044-c65a0ca9-852f-46d2-afca-b0bb354d2192.svg"></div>
 
 # Projeto ONE - Oracle Next Education
 ## Challenge Codificador/Decodificador de Textos
@@ -26,5 +26,16 @@ Exemplo de criptografia/descriptografia:
 > "gato" => "gaitober"
 
 > "gaitober" => "gato"
+<br>
 
 Foi disponibilizado um layout feito no Figma para desenvolvermos o projeto, seguir o layout era opcional, trabalhamos também com a ferramenta Trello para gerenciamento de fluxo de trabalho.
+<br>
+
+Adicionei ao meu Layout a opção de trocar de temas ao clicar na engrenagem no canto superior direito.
+
+Clique na imagem abaixo para abrir a página do projeto:
+<br>
+<br>
+<div align="center">
+<a href="https://kamdn.github.io/codificadordetextos/"><img height="350px" src="https://user-images.githubusercontent.com/109771015/215298022-98f3ee06-3eb0-4d6e-90b6-66a87cb024a5.jpg"></a>
+</div>
